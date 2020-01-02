@@ -10,4 +10,15 @@ import UIKit
 
 class PostListingViewModal: BaseViewModal {
 
+    //MARK:- Variable -
+    var viewController: PostListingViewController!
+    
+    init(viewController: PostListingViewController) {
+        self.viewController = viewController
+    }
+    
+    //MARK:- View Method -
+    func preparePostView() {
+        viewController.postListingTableView.register(UINib(nibName: String(describing: PostListingTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: PostListingTableViewCell.self))
+    }
 }

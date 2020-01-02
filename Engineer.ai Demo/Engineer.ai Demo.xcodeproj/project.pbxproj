@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		7BA9C39D23BDE48F00D92985 /* PostListingViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C39C23BDE48F00D92985 /* PostListingViewModal.swift */; };
 		7BA9C39F23BDE49B00D92985 /* PostListingViewNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C39E23BDE49B00D92985 /* PostListingViewNavigator.swift */; };
 		7BA9C3A323BDE4AD00D92985 /* PostListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3A223BDE4AD00D92985 /* PostListingInteractor.swift */; };
+		7BA9C3A623BDE5F000D92985 /* PostListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3A423BDE5F000D92985 /* PostListingTableViewCell.swift */; };
+		7BA9C3A723BDE5F000D92985 /* PostListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9C3A523BDE5F000D92985 /* PostListingTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		7BA9C39C23BDE48F00D92985 /* PostListingViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingViewModal.swift; sourceTree = "<group>"; };
 		7BA9C39E23BDE49B00D92985 /* PostListingViewNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingViewNavigator.swift; sourceTree = "<group>"; };
 		7BA9C3A223BDE4AD00D92985 /* PostListingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingInteractor.swift; sourceTree = "<group>"; };
+		7BA9C3A423BDE5F000D92985 /* PostListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingTableViewCell.swift; sourceTree = "<group>"; };
+		7BA9C3A523BDE5F000D92985 /* PostListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListingTableViewCell.xib; sourceTree = "<group>"; };
 		B49E6096C3E90C2B2DB738C5 /* Pods-Engineer.ai Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.ai Demo.release.xcconfig"; path = "Target Support Files/Pods-Engineer.ai Demo/Pods-Engineer.ai Demo.release.xcconfig"; sourceTree = "<group>"; };
 		BE47F28B8DB8ECE88EDAD66D /* Pods-Engineer.ai Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.ai Demo.debug.xcconfig"; path = "Target Support Files/Pods-Engineer.ai Demo/Pods-Engineer.ai Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +152,8 @@
 		7BA9C39023BDE42700D92985 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7BA9C3A423BDE5F000D92985 /* PostListingTableViewCell.swift */,
+				7BA9C3A523BDE5F000D92985 /* PostListingTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,7 +208,6 @@
 				BE47F28B8DB8ECE88EDAD66D /* Pods-Engineer.ai Demo.debug.xcconfig */,
 				B49E6096C3E90C2B2DB738C5 /* Pods-Engineer.ai Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,6 +283,7 @@
 				7BA9C38C23BDE3C000D92985 /* Localization.strings in Resources */,
 				7BA9C37B23BDE35500D92985 /* Assets.xcassets in Resources */,
 				7BA9C37923BDE35500D92985 /* Main.storyboard in Resources */,
+				7BA9C3A723BDE5F000D92985 /* PostListingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +338,7 @@
 			files = (
 				7BA9C37423BDE35500D92985 /* AppDelegate.swift in Sources */,
 				7BA9C3A323BDE4AD00D92985 /* PostListingInteractor.swift in Sources */,
+				7BA9C3A623BDE5F000D92985 /* PostListingTableViewCell.swift in Sources */,
 				7BA9C39B23BDE47B00D92985 /* BaseViewModal.swift in Sources */,
 				7BA9C39923BDE46900D92985 /* PostListingViewController.swift in Sources */,
 				7BA9C39F23BDE49B00D92985 /* PostListingViewNavigator.swift in Sources */,

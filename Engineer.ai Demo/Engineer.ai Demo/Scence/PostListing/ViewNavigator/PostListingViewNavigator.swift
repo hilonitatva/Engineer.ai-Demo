@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+class PostListingViewNavigator {
+    
+    //MARK:- Variable -
+    var viewController: PostListingViewController!
+    
+    init(viewController: PostListingViewController) {
+        self.viewController = viewController
+    }
+    
+}
