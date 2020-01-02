@@ -39,9 +39,37 @@
                     <navigationItem key="navigationItem" id="Kh3-QR-c4L"/>
                     <connections>
                         <outlet property="postListingTableView" destination="9a3-zq-1MR" id="RRk-vo-XQQ"/>
+                        <outlet property="tableFooterView" destination="kTa-s9-Tzx" id="fa3-GC-QEX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="kTa-s9-Tzx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-HE-vw3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="GqE-rJ-QKw">
+                                    <rect key="frame" x="177.5" y="40" width="20" height="20"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="GqE-rJ-QKw" firstAttribute="centerY" secondItem="dBA-HE-vw3" secondAttribute="centerY" id="em0-yj-91T"/>
+                                <constraint firstItem="GqE-rJ-QKw" firstAttribute="centerX" secondItem="dBA-HE-vw3" secondAttribute="centerX" id="vOJ-Ge-KWY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zcm-Iy-HJq" firstAttribute="trailing" secondItem="dBA-HE-vw3" secondAttribute="trailing" id="SJo-yh-EbJ"/>
+                        <constraint firstItem="dBA-HE-vw3" firstAttribute="top" secondItem="kTa-s9-Tzx" secondAttribute="top" id="biR-VM-AQy"/>
+                        <constraint firstItem="dBA-HE-vw3" firstAttribute="leading" secondItem="zcm-Iy-HJq" secondAttribute="leading" id="laN-x0-pmD"/>
+                        <constraint firstAttribute="bottom" secondItem="dBA-HE-vw3" secondAttribute="bottom" id="tfA-G7-ywz"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="zcm-Iy-HJq"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="1057" y="-535"/>
         </scene>

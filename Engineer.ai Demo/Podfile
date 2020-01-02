@@ -10,4 +10,7 @@ target 'Engineer.ai Demo' do
 #API 
 pod 'Alamofire'
 
+#Indicator
+pod 'SVProgressHUD'
+
 end

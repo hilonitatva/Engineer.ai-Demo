@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0H-MQ-BBR">
-                                <rect key="frame" x="0.0" y="0.0" width="306" height="61.5"/>
+                                <rect key="frame" x="10" y="10" width="301" height="56.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,22 +35,32 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emo-F9-Y7X">
-                                <rect key="frame" x="0.0" y="71.5" width="306" height="18"/>
+                                <rect key="frame" x="10" y="71.5" width="301" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nry-8y-8Em">
+                                <rect key="frame" x="0.0" y="98.5" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="es9-fF-IDG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TNl-b1-Xg0" firstAttribute="centerY" secondItem="Zf9-xT-9fV" secondAttribute="centerY" id="DHv-TF-MeL"/>
-                            <constraint firstItem="f0H-MQ-BBR" firstAttribute="top" secondItem="Zf9-xT-9fV" secondAttribute="top" id="DcU-5l-wli"/>
-                            <constraint firstItem="emo-F9-Y7X" firstAttribute="top" secondItem="f0H-MQ-BBR" secondAttribute="bottom" constant="10" id="Jsh-DT-41q"/>
+                            <constraint firstAttribute="trailing" secondItem="Nry-8y-8Em" secondAttribute="trailing" id="Dq8-hQ-NZ9"/>
+                            <constraint firstItem="emo-F9-Y7X" firstAttribute="top" secondItem="f0H-MQ-BBR" secondAttribute="bottom" constant="5" id="Jsh-DT-41q"/>
+                            <constraint firstItem="f0H-MQ-BBR" firstAttribute="top" secondItem="Zf9-xT-9fV" secondAttribute="top" constant="10" id="OjG-af-alC"/>
                             <constraint firstItem="emo-F9-Y7X" firstAttribute="leading" secondItem="f0H-MQ-BBR" secondAttribute="leading" id="Ot0-ar-8qm"/>
+                            <constraint firstAttribute="bottom" secondItem="Nry-8y-8Em" secondAttribute="bottom" id="TgL-ES-aa0"/>
                             <constraint firstAttribute="bottom" secondItem="emo-F9-Y7X" secondAttribute="bottom" constant="10" id="an6-pq-pHx"/>
-                            <constraint firstItem="f0H-MQ-BBR" firstAttribute="trailing" secondItem="TNl-b1-Xg0" secondAttribute="leading" constant="-10" id="eRh-K2-MI3"/>
+                            <constraint firstItem="f0H-MQ-BBR" firstAttribute="trailing" secondItem="TNl-b1-Xg0" secondAttribute="leading" constant="-5" id="eRh-K2-MI3"/>
+                            <constraint firstItem="Nry-8y-8Em" firstAttribute="leading" secondItem="Zf9-xT-9fV" secondAttribute="leading" id="ey9-fa-sFp"/>
                             <constraint firstAttribute="trailing" secondItem="TNl-b1-Xg0" secondAttribute="trailing" constant="10" id="gya-HU-FV0"/>
-                            <constraint firstItem="f0H-MQ-BBR" firstAttribute="leading" secondItem="Zf9-xT-9fV" secondAttribute="leading" id="i0r-2G-yOY"/>
+                            <constraint firstItem="f0H-MQ-BBR" firstAttribute="leading" secondItem="Zf9-xT-9fV" secondAttribute="leading" constant="10" id="i0r-2G-yOY"/>
                             <constraint firstItem="emo-F9-Y7X" firstAttribute="trailing" secondItem="f0H-MQ-BBR" secondAttribute="trailing" id="vh6-oz-8bP"/>
                         </constraints>
                     </view>
@@ -68,7 +78,7 @@
                 <outlet property="dateLabel" destination="emo-F9-Y7X" id="aZA-Sa-OFu"/>
                 <outlet property="titleLabel" destination="f0H-MQ-BBR" id="Kqa-fx-cyn"/>
             </connections>
-            <point key="canvasLocation" x="-1" y="104"/>
+            <point key="canvasLocation" x="-2.1739130434782612" y="103.79464285714285"/>
         </tableViewCell>
     </objects>
 </document>

@@ -22,6 +22,9 @@
 		7BA9C3A323BDE4AD00D92985 /* PostListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3A223BDE4AD00D92985 /* PostListingInteractor.swift */; };
 		7BA9C3A623BDE5F000D92985 /* PostListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3A423BDE5F000D92985 /* PostListingTableViewCell.swift */; };
 		7BA9C3A723BDE5F000D92985 /* PostListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9C3A523BDE5F000D92985 /* PostListingTableViewCell.xib */; };
+		7BA9C3A923BDE9ED00D92985 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3A823BDE9ED00D92985 /* APIManager.swift */; };
+		7BA9C3AB23BDEA0200D92985 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3AA23BDEA0200D92985 /* APIRouter.swift */; };
+		7BA9C3AF23BDFB0800D92985 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3AE23BDFB0800D92985 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		7BA9C3A223BDE4AD00D92985 /* PostListingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingInteractor.swift; sourceTree = "<group>"; };
 		7BA9C3A423BDE5F000D92985 /* PostListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingTableViewCell.swift; sourceTree = "<group>"; };
 		7BA9C3A523BDE5F000D92985 /* PostListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListingTableViewCell.xib; sourceTree = "<group>"; };
+		7BA9C3A823BDE9ED00D92985 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7BA9C3AA23BDEA0200D92985 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		7BA9C3AE23BDFB0800D92985 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B49E6096C3E90C2B2DB738C5 /* Pods-Engineer.ai Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.ai Demo.release.xcconfig"; path = "Target Support Files/Pods-Engineer.ai Demo/Pods-Engineer.ai Demo.release.xcconfig"; sourceTree = "<group>"; };
 		BE47F28B8DB8ECE88EDAD66D /* Pods-Engineer.ai Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.ai Demo.debug.xcconfig"; path = "Target Support Files/Pods-Engineer.ai Demo/Pods-Engineer.ai Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +134,7 @@
 		7BA9C38D23BDE3F500D92985 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				7BA9C3AE23BDFB0800D92985 /* Post.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -135,6 +142,8 @@
 		7BA9C38E23BDE3F500D92985 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				7BA9C3A823BDE9ED00D92985 /* APIManager.swift */,
+				7BA9C3AA23BDEA0200D92985 /* APIRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -338,10 +347,13 @@
 			files = (
 				7BA9C37423BDE35500D92985 /* AppDelegate.swift in Sources */,
 				7BA9C3A323BDE4AD00D92985 /* PostListingInteractor.swift in Sources */,
+				7BA9C3A923BDE9ED00D92985 /* APIManager.swift in Sources */,
+				7BA9C3AF23BDFB0800D92985 /* Post.swift in Sources */,
 				7BA9C3A623BDE5F000D92985 /* PostListingTableViewCell.swift in Sources */,
 				7BA9C39B23BDE47B00D92985 /* BaseViewModal.swift in Sources */,
 				7BA9C39923BDE46900D92985 /* PostListingViewController.swift in Sources */,
 				7BA9C39F23BDE49B00D92985 /* PostListingViewNavigator.swift in Sources */,
+				7BA9C3AB23BDEA0200D92985 /* APIRouter.swift in Sources */,
 				7BA9C39D23BDE48F00D92985 /* PostListingViewModal.swift in Sources */,
 				7BA9C38A23BDE3AA00D92985 /* Constants.swift in Sources */,
 				7BA9C39723BDE45300D92985 /* BaseViewController.swift in Sources */,

@@ -7,3 +7,6 @@
 //
 
 import Foundation
+
+let Environment = "https://hn.algolia.com/api/"
+
