@@ -57,6 +57,9 @@ class PostListingViewModal: BaseViewModal {
                 self.viewController.hitsArray.append(hit)
             }
             self.viewController.isLoading = false
+            if page < self.viewController.postDetail?.nbPages ?? 0 {
+                self.viewController.hasMore = true
+            }
             self.viewController.postListingTableView.refreshControl?.endRefreshing()
             self.prepareNavigationBar()
             self.viewController.postListingTableView.tableFooterView = nil

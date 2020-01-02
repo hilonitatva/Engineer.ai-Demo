@@ -24,9 +24,11 @@ class PostListingTableViewCell: UITableViewCell {
             createdAtDateFormatter.timeZone = .current
             let displayDateFormatter = DateFormatter()
             displayDateFormatter.dateFormat = "E, d MMM yyyy hh:mm:ss a"
-            let formattedCreatedDate = displayDateFormatter.string(from: createdAtDateFormatter.date(from: (postList?.created_at)!)!)
-            dateLabel.text      = formattedCreatedDate
-            activeSwitch.isOn   = postList?.isActive ?? false
+            if let date = createdAtDateFormatter.date(from: (postList?.created_at)!) {
+                let formattedCreatedDate = displayDateFormatter.string(from: date)
+                dateLabel.text      =  formattedCreatedDate
+            }
+            activeSwitch.isOn   =  postList?.isActive ?? false
         }
     }
     var toggleSwitchState: ((Hits)->())?

@@ -22,6 +22,7 @@ class PostListingViewController: BaseViewController {
     var isLoading = false
     var hitCount: Int = 0
     var page: Int = 1
+    var hasMore: Bool = false
     
     //MARK:- Controller Method -
     override func viewDidLoad() {
@@ -68,7 +69,7 @@ extension PostListingViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row  == self.hitsArray.count - 1 {
-            if self.hitsArray.count < postDetail?.nbHits ?? 0 && isLoading == false{
+            if self.hitsArray.count < postDetail?.nbHits ?? 0 && isLoading == false && self.hasMore == true{
                 page += 1
                 self.postListingTableView.tableFooterView = tableFooterView
                 viewModal.callPostListingAPI(page: page)
