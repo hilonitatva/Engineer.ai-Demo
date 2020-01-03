@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4663A3B23466B235D52580D9 /* Pods_Engineer_ai_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E39FAE2DCC718097C2B01 /* Pods_Engineer_ai_Demo.framework */; };
+		7B3CD65E23BF0F6600026469 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CD65D23BF0F6600026469 /* String + Extension.swift */; };
 		7BA9C37423BDE35500D92985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C37323BDE35500D92985 /* AppDelegate.swift */; };
 		7BA9C37923BDE35500D92985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9C37723BDE35500D92985 /* Main.storyboard */; };
 		7BA9C37B23BDE35500D92985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9C37A23BDE35500D92985 /* Assets.xcassets */; };
 		7BA9C37E23BDE35500D92985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9C37C23BDE35500D92985 /* LaunchScreen.storyboard */; };
 		7BA9C38A23BDE3AA00D92985 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C38923BDE3AA00D92985 /* Constants.swift */; };
-		7BA9C38C23BDE3C000D92985 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9C38B23BDE3C000D92985 /* Localization.strings */; };
+		7BA9C38C23BDE3C000D92985 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9C38B23BDE3C000D92985 /* Localizable.strings */; };
 		7BA9C39723BDE45300D92985 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C39623BDE45300D92985 /* BaseViewController.swift */; };
 		7BA9C39923BDE46900D92985 /* PostListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C39823BDE46900D92985 /* PostListingViewController.swift */; };
 		7BA9C39B23BDE47B00D92985 /* BaseViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C39A23BDE47B00D92985 /* BaseViewModal.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		211E39FAE2DCC718097C2B01 /* Pods_Engineer_ai_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Engineer_ai_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3CD65D23BF0F6600026469 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		7BA9C37023BDE35500D92985 /* Engineer.ai Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Engineer.ai Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA9C37323BDE35500D92985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BA9C37823BDE35500D92985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,7 +38,7 @@
 		7BA9C37D23BDE35500D92985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BA9C37F23BDE35500D92985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BA9C38923BDE3AA00D92985 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7BA9C38B23BDE3C000D92985 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		7BA9C38B23BDE3C000D92985 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		7BA9C39623BDE45300D92985 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7BA9C39823BDE46900D92985 /* PostListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingViewController.swift; sourceTree = "<group>"; };
 		7BA9C39A23BDE47B00D92985 /* BaseViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModal.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B3CD65C23BF0F5900026469 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CD65D23BF0F6600026469 /* String + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		7BA9C36723BDE35500D92985 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +100,6 @@
 				7BA9C38E23BDE3F500D92985 /* Router */,
 				7BA9C38F23BDE3F500D92985 /* Scence */,
 				7BA9C38523BDE37100D92985 /* Storyboard */,
-				7BA9C38623BDE38000D92985 /* Tools */,
 				7BA9C37F23BDE35500D92985 /* Info.plist */,
 			);
 			path = "Engineer.ai Demo";
@@ -101,6 +110,7 @@
 			children = (
 				7BA9C37723BDE35500D92985 /* Main.storyboard */,
 				7BA9C37C23BDE35500D92985 /* LaunchScreen.storyboard */,
+				7BA9C38623BDE38000D92985 /* Tools */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				7BA9C37A23BDE35500D92985 /* Assets.xcassets */,
+				7B3CD65C23BF0F5900026469 /* Extension */,
 				7BA9C38723BDE39E00D92985 /* Constant */,
 				7BA9C38823BDE39E00D92985 /* Localization */,
 			);
@@ -126,7 +137,7 @@
 		7BA9C38823BDE39E00D92985 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				7BA9C38B23BDE3C000D92985 /* Localization.strings */,
+				7BA9C38B23BDE3C000D92985 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -289,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA9C37E23BDE35500D92985 /* LaunchScreen.storyboard in Resources */,
-				7BA9C38C23BDE3C000D92985 /* Localization.strings in Resources */,
+				7BA9C38C23BDE3C000D92985 /* Localizable.strings in Resources */,
 				7BA9C37B23BDE35500D92985 /* Assets.xcassets in Resources */,
 				7BA9C37923BDE35500D92985 /* Main.storyboard in Resources */,
 				7BA9C3A723BDE5F000D92985 /* PostListingTableViewCell.xib in Resources */,
@@ -355,6 +366,7 @@
 				7BA9C39F23BDE49B00D92985 /* PostListingViewNavigator.swift in Sources */,
 				7BA9C3AB23BDEA0200D92985 /* APIRouter.swift in Sources */,
 				7BA9C39D23BDE48F00D92985 /* PostListingViewModal.swift in Sources */,
+				7B3CD65E23BF0F6600026469 /* String + Extension.swift in Sources */,
 				7BA9C38A23BDE3AA00D92985 /* Constants.swift in Sources */,
 				7BA9C39723BDE45300D92985 /* BaseViewController.swift in Sources */,
 			);

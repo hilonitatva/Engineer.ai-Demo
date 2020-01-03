@@ -39,7 +39,7 @@ extension APIRouter {
 extension APIRouter {
     var parameter: Parameters {
         switch self {
-        case .callPost(let page):
+        case .callPost:
             return [:]
         }
     }

@@ -12,17 +12,14 @@ class PostListingViewController: BaseViewController {
 
     //MARK:- Outlets -
     @IBOutlet weak var postListingTableView                  : UITableView!
-    @IBOutlet private weak var tableFooterView               : UIView!
+    @IBOutlet weak var tableFooterView               : UIView!
     
     //MARK:- Variable -
     lazy var viewModal              : PostListingViewModal          = PostListingViewModal(viewController: self)
     lazy var viewNavigator          : PostListingViewNavigator      = PostListingViewNavigator(viewController: self)
     var postDetail: Post?
     var hitsArray = [Hits]()
-    var isLoading = false
-    var hitCount: Int = 0
-    var page: Int = 1
-    var hasMore: Bool = false
+    
     
     //MARK:- Controller Method -
     override func viewDidLoad() {
@@ -33,6 +30,7 @@ class PostListingViewController: BaseViewController {
     
     //MARK:- View Method -
     private func prepareView() {
+       self.postListingTableView.register(UINib(nibName: String(describing: PostListingTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: PostListingTableViewCell.self))
         viewModal.preparePostView()
     }
     
@@ -69,11 +67,7 @@ extension PostListingViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row  == self.hitsArray.count - 1 {
-            if self.hitsArray.count < postDetail?.nbHits ?? 0 && isLoading == false && self.hasMore == true{
-                page += 1
-                self.postListingTableView.tableFooterView = tableFooterView
-                viewModal.callPostListingAPI(page: page)
-            }
+            viewModal.paginationTable()
         }
     }
     

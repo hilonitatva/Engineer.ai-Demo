@@ -1,0 +1,15 @@
+/* 
+  Localization.strings
+  Engineer.ai Demo
+
+  Created by PCQ177 on 02/01/20.
+  Copyright © 2020 PCQ177. All rights reserved.
+*/
+
+//MARK:- Alert Message -
+"projectName" = "Engineer AI Demo";
+"ok"          = "Ok";
+
+//MARK:- Navigation Title -
+"singlePostSelectedMessage"     = "Number of Selected Post : 1";
+"mupltiplePostSelectedMessage"  = "Number of Selected Posts : ";

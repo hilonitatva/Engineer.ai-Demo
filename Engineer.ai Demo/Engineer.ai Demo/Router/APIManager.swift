@@ -8,16 +8,11 @@
 
 import Foundation
 import Alamofire
-import SVProgressHUD
 
 class APIManager {
     
     
-    static func callRequest(showIndicator:Bool = true,_ router: APIRouter,completionSuccess: @escaping ((Data)->()),faliure: @escaping (String)->()) {
-       
-        if showIndicator {
-            SVProgressHUD.show()
-        }
+    static func callRequest(_ router: APIRouter,completionSuccess: @escaping ((Data)->()),faliure: @escaping (String)->()) {
         let header = ["Content-Type":"application/json"]
         let path = router.path
         let parameter = router.parameter
@@ -31,8 +26,7 @@ class APIManager {
             case .failure:
                 faliure(response.error!.localizedDescription)
             }
-            SVProgressHUD.dismiss()
         }
-        }
+    }
     
 }
