@@ -15,7 +15,7 @@ class PostListingViewModal: BaseViewModal {
    private var viewController: PostListingViewController!
    private var isLoading = false
    private var hitCount: Int = 0
-   private var page: Int = 1
+   private var page: Int = 0
    private var hasMore: Bool = false
     
     init(viewController: PostListingViewController) {
@@ -37,7 +37,7 @@ class PostListingViewModal: BaseViewModal {
     }
     
     func prepareInitialTableView() {
-        self.page = 1
+        self.page = 0
         self.callPostListingAPI(page: self.page)
     }
     
@@ -65,7 +65,7 @@ class PostListingViewModal: BaseViewModal {
         PostListingInteractor.callPostListingAPI(page: page, completionSucces: { (response) in
               let post = try? JSONDecoder().decode(Post.self, from: response)
               self.viewController.postDetail = post
-            if page == 1 {
+            if page == 0 {
                 self.viewController.hitsArray.removeAll()
             }
             for hit in (self.viewController.postDetail!.hits)! {

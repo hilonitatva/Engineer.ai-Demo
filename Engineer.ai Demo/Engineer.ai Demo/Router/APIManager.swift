@@ -19,7 +19,7 @@ class APIManager {
         
         let encoding: ParameterEncoding = URLEncoding.default
         
-        Alamofire.request(path, method: router.method, parameters: parameter, encoding: encoding, headers: header).responseData { (response) in
+        Alamofire.request(path, method: router.method, parameters: parameter, encoding: encoding, headers: header).validate().responseData { (response) in
             switch response.result {
             case .success:
                 completionSuccess(response.result.value ?? Data())
