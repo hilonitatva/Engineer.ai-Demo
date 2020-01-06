@@ -12,7 +12,7 @@ class PostListingViewController: BaseViewController {
 
     //MARK:- Outlets -
     @IBOutlet weak var postListingTableView                  : UITableView!
-    @IBOutlet weak var tableFooterView               : UIView!
+    @IBOutlet weak var tableFooterView                       : UIView!
     
     //MARK:- Variable -
     lazy var viewModal              : PostListingViewModal          = PostListingViewModal(viewController: self)
@@ -30,7 +30,6 @@ class PostListingViewController: BaseViewController {
     
     //MARK:- View Method -
     private func prepareView() {
-       self.postListingTableView.register(UINib(nibName: String(describing: PostListingTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: PostListingTableViewCell.self))
         viewModal.preparePostView()
     }
     
@@ -56,13 +55,13 @@ extension PostListingViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let postCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PostListingTableViewCell.self)) as! PostListingTableViewCell
-        postCell.postList = self.hitsArray[indexPath.row]
-        postCell.toggleSwitchState = {(postList) -> () in
+        let postCell = tableView.registerAndGet(cell: PostListingTableViewCell.self)
+        postCell?.postList = self.hitsArray[indexPath.row]
+        postCell?.toggleSwitchState = {(postList) -> () in
            self.hitsArray[indexPath.row] = postList
            self.viewModal.prepareNavigationBar()
         }
-        return postCell
+        return postCell!
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

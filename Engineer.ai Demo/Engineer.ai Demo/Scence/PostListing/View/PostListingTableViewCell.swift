@@ -11,9 +11,9 @@ import UIKit
 class PostListingTableViewCell: UITableViewCell {
 
     //MARK:- Outlets -
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var activeSwitch: UISwitch!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet private weak var activeSwitch: UISwitch!
     
     //MARK:- Variable -
     var postList: Hits? {
@@ -32,16 +32,6 @@ class PostListingTableViewCell: UITableViewCell {
         }
     }
     var toggleSwitchState: ((Hits)->())?
-    
-    //MARK:- Controller Method -
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
     
     //MARK:- Action Method -
     @IBAction func didTapOnSwitch(_ sender: UISwitch) {

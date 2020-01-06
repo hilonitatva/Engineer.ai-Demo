@@ -26,6 +26,7 @@
 		7BA9C3A923BDE9ED00D92985 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3A823BDE9ED00D92985 /* APIManager.swift */; };
 		7BA9C3AB23BDEA0200D92985 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3AA23BDEA0200D92985 /* APIRouter.swift */; };
 		7BA9C3AF23BDFB0800D92985 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9C3AE23BDFB0800D92985 /* Post.swift */; };
+		7BE0544723C2F7CB0069CA82 /* TableView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0544623C2F7CB0069CA82 /* TableView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		7BA9C3A823BDE9ED00D92985 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7BA9C3AA23BDEA0200D92985 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		7BA9C3AE23BDFB0800D92985 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7BE0544623C2F7CB0069CA82 /* TableView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView + Extension.swift"; sourceTree = "<group>"; };
 		B49E6096C3E90C2B2DB738C5 /* Pods-Engineer.ai Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.ai Demo.release.xcconfig"; path = "Target Support Files/Pods-Engineer.ai Demo/Pods-Engineer.ai Demo.release.xcconfig"; sourceTree = "<group>"; };
 		BE47F28B8DB8ECE88EDAD66D /* Pods-Engineer.ai Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.ai Demo.debug.xcconfig"; path = "Target Support Files/Pods-Engineer.ai Demo/Pods-Engineer.ai Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				7B3CD65D23BF0F6600026469 /* String + Extension.swift */,
+				7BE0544623C2F7CB0069CA82 /* TableView + Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -100,6 +103,7 @@
 				7BA9C38E23BDE3F500D92985 /* Router */,
 				7BA9C38F23BDE3F500D92985 /* Scence */,
 				7BA9C38523BDE37100D92985 /* Storyboard */,
+				7BA9C38623BDE38000D92985 /* Tools */,
 				7BA9C37F23BDE35500D92985 /* Info.plist */,
 			);
 			path = "Engineer.ai Demo";
@@ -110,7 +114,6 @@
 			children = (
 				7BA9C37723BDE35500D92985 /* Main.storyboard */,
 				7BA9C37C23BDE35500D92985 /* LaunchScreen.storyboard */,
-				7BA9C38623BDE38000D92985 /* Tools */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				7BA9C3A923BDE9ED00D92985 /* APIManager.swift in Sources */,
 				7BA9C3AF23BDFB0800D92985 /* Post.swift in Sources */,
 				7BA9C3A623BDE5F000D92985 /* PostListingTableViewCell.swift in Sources */,
+				7BE0544723C2F7CB0069CA82 /* TableView + Extension.swift in Sources */,
 				7BA9C39B23BDE47B00D92985 /* BaseViewModal.swift in Sources */,
 				7BA9C39923BDE46900D92985 /* PostListingViewController.swift in Sources */,
 				7BA9C39F23BDE49B00D92985 /* PostListingViewNavigator.swift in Sources */,
