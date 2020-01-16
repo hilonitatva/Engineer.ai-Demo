@@ -31,6 +31,7 @@ class PostListingViewController: BaseViewController {
     //MARK:- View Method -
     private func prepareView() {
         viewModal.preparePostView()
+        print("Prepare View")
     }
     
     //Pull To Refresh
